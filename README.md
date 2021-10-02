@@ -1,11 +1,11 @@
 Tasky
 ===
 
-### Tasks
+## Tasks
 
-#### 1. Front-end
+### 1. Front-end
 
-**Task: Crear un formulario en React con nombre, email y teléfono; guardar en base de datos la información enviada.**
+#### Task: Crear un formulario en React con nombre, email y teléfono; guardar en base de datos la información enviada.
 
 - Debe validar:
   - Que el usuario escriba su nombre con apellidos
@@ -15,11 +15,11 @@ Tasky
 
 ![](tasky/form.gif)
 
-Puntos extra si la validación de nombre y apellidos se hace correctamente incluso si el usuario pone espacios o caracteres especiales, y si el teléfono es validado a 10 dígitos, independientemente de guiones y espacios que introduzca el usuario.
+Puntos extra si el formulario (y sus campos y botón) se deshabilita para evitar que se envíe la información dos veces.
 
-Puntos extra (×2) si el formulario (y sus campos y botón) se deshabilita para evitar que se envíe la información dos veces.
+Puntos extra (×2) si la validación de nombre y apellidos se hace correctamente incluso si el usuario pone espacios o caracteres especiales, y si el teléfono es validado a 10 dígitos, independientemente de guiones y espacios que introduzca el usuario.
 
-**Task: Completar la maqueta.**
+#### Task: Completar la maqueta.
 
 Lograr que la primer sección (de fondo azul) se empalme ligeramente con la segunda sección:
 
@@ -27,31 +27,31 @@ Lograr que la primer sección (de fondo azul) se empalme ligeramente con la segu
 
 Revisar [diseño final](tasky/landing.png) como referencia de cómo debe verse la maqueta. (Pista: este task no es solo de modificar el CSS, también el HTML.)
 
-Puntos extra si la implementación considera un diseño responsive y los bordes de la imagen de fondo no son visibles en diferentes resoluciones, así como conexiones lentas que podrían tardar en cargar la imagen.
+Puntos extra si la implementación considera un diseño responsive y los bordes de la imagen de fondo no son visibles en diferentes resoluciones, así como conexiones lentas que podrían alentar la carga de la imagen.
 
-#### 2. Back-end
+### 2. Back-end
 
-**Task: Crear modelo Lead.**
+#### Task: Crear modelo Lead.
 
 Crea un nuevo modelo llamado `Lead` y una nueva migración que agregue al modelo 3 columnas string: nombre, email, teléfono.
 
-**Task: Crear nuevo controlador.**
+#### Task: Crear nuevo controlador.
 
 Crea un nuevo controlador para recibir la información del formulario y la guarde al modelo `Lead`.
 
 Puntos extra si se realiza la misma validación que se hace en front-end, pero a través del controlador.
 
-**Task: Nuevo endpoint.**
+#### Task: Nuevo endpoint.
 
 Crea un endpoint con ruta `/api/lead` y método POST para el controlador creado anteriormente, donde recibirás la información del formulario.
 
-#### 3. Tests
+### 3. Tests
 
-**Task: Completa las pruebas unitarias.**
+#### Task: Completa las pruebas unitarias.
 
 Completa la prueba unitaria `test/Feature/LeadsTest` para comprobar que el endpoint recibe la información de Lead y la persiste en la base de datos.
 
-**Task: Completa la prueba de integración.**
+#### Task: Completa la prueba de integración.
 
 Completa la prueba de integración `test/Browser/LeadsTest` para comprobar que un usuario al escribir su información en el formulario y enviarlo el sistema recibe y persiste su información en la base de datos.
 
